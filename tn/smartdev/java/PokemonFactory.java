@@ -8,14 +8,18 @@ public class PokemonFactory {
 
     public @Nullable Pokemon getPokemon(@NotNull String pokemonType) {
         switch (pokemonType) {
-            case "Land":
+            case "Land" -> {
                 return new LandPokemon();
-            case "Water":
+            }
+            case "Water" -> {
                 return new WaterPokemon();
-            case "Fire":
+            }
+            case "Fire" -> {
                 return new FirePokemon();
-            default:
+            }
+            default -> {
                 return null;
+            }
         }
     }
 
