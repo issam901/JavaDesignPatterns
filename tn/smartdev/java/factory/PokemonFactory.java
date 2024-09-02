@@ -1,20 +1,21 @@
-package tn.smartdev.java;
+package tn.smartdev.java.factory;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import tn.smartdev.java.utils.*;
+import tn.smartdev.java.generic.Pokemon;
+import tn.smartdev.java.generic.PokemonType;
 
 public class PokemonFactory {
 
-    public @Nullable Pokemon getPokemon(@NotNull String pokemonType) {
+    public static @Nullable Pokemon getPokemon(@NotNull PokemonType pokemonType) {
         switch (pokemonType) {
-            case "Land" -> {
+            case LAND -> {
                 return new LandPokemon();
             }
-            case "Water" -> {
+            case WATER -> {
                 return new WaterPokemon();
             }
-            case "Fire" -> {
+            case FIRE -> {
                 return new FirePokemon();
             }
             default -> {

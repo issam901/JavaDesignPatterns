@@ -1,4 +1,4 @@
-package tn.smartdev.java;
+package tn.smartdev.java.singleton;
 
 public class Singleton{
 
