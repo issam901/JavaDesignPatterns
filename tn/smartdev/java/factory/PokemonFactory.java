@@ -1,13 +1,11 @@
 package tn.smartdev.java.factory;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import tn.smartdev.java.generic.Pokemon;
 import tn.smartdev.java.generic.PokemonType;
 
 public class PokemonFactory {
 
-    public static @Nullable Pokemon getPokemon(@NotNull PokemonType pokemonType) {
+    public static Pokemon getPokemon(PokemonType pokemonType) {
         switch (pokemonType) {
             case LAND -> {
                 return new LandPokemon();
